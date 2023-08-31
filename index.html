@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <section id="nav">
+        <a href="#home" class="logo"><img src="assets/logo1.png" alt="" /></a>
+        <div class="navbar">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#facilities" class="nav-link">Our Profile</a>
+          <a href="#" class="nav-link">Achievement</a>
+          <a href="#message" class="nav-link">Message Us</a>
+        </div>
+      </section>
+    </header>
+
+    <!-- Content -->
+    <main>
+      <div id="home" class="banner">
+        <h1>Hi <span id="name">Student</span>, Welcome to my website</h1>
+        <div class="slides">
+          <div class="slide">
+            <img src="assets/sekolah.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/upacara.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/ujian.jpg" alt="" />
+          </div>
+          <div class="navigation">
+            <a class="prev" onclick="plusSlide(-1)">&#10094</a>
+            <a class="next" onclick="plusSlide(-1)">&#10095</a>
+          </div>
+        </div>
+        <div class="desc">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus inventore doloremque neque laudantium nesciunt, obcaecati, praesentium similique ratione reiciendis ab, recusandae perspiciatis sint labore libero quas harum eaque asperiores nostrum?</p>
+        </div>
+      </div>
+
+      <!-- Fasilitas -->
+      <div id="facilities" class="facilities">
+        <h3>Our Facilities</h3>
+        <div class="fcl">
+        <div class="f-img">
+          <img src="assets/kelas.jpg" alt="" />
+          <p>Kelas</p>
+        </div>
+        <div class="f-img">
+          <img src="assets/kantin.jpg" alt="" />
+          <p>Kantin</p>
+        </div>
+        <div class="f-img">
+          <img src="assets/lab.jpg" alt="" />
+          <p>Laboratorium</p>
+        </div>
+    </main>
+
+    <!-- Message Us -->
+    <form id="message" method="POST">
+      <h3>Message Us</h3>
+      <table>
+        <td>
+          <tr>
+            <td>Nama</td>
+            <td>: <input type="text" placeholder="Nama" /></td>
+          </tr>
+          <tr>
+            <td>Tanggal</td>
+            <td>: <input type="date" /></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              : <input type="radio" />Laki-laki <input type="radio" />Perempuan
+            </td>
+          </tr>
+          <tr>
+            <td>Pesan</td>
+            <td>: <textarea placeholder="Pesan"></textarea></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="submit" /></td>
+          </tr>
+        </td>
+      </table>
+    </form>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
